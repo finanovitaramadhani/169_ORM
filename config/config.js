@@ -1,4 +1,4 @@
-requestAnimationFrame('dotenv').config();
+require('dotenv').config();
 
 
   const development = {
@@ -6,6 +6,7 @@ requestAnimationFrame('dotenv').config();
     "password": process.env.DB_PASSWORD,
     "database": process.env.DB_NAME,
     "host": process.env.DB_HOST,
+    "port": process.env.DB_PORT,
     "dialect": process.env.DB_DIALECT
   }
 
@@ -14,6 +15,7 @@ requestAnimationFrame('dotenv').config();
     "password": process.env.DB_PASSWORD,
     "database": process.env.DB_NAME,
     "host": process.env.DB_HOST,
+    "port": process.env.DB_PORT,
     "dialect": process.env.DB_DIALECT
   }
 
@@ -22,6 +24,7 @@ requestAnimationFrame('dotenv').config();
     "password": process.env.DB_PASSWORD,
     "database": process.env.DB_NAME,
     "host": process.env.DB_HOST,
+    "port": process.env.DB_PORT,
     "dialect": process.env.DB_DIALECT
   }
 module.exports = {development,test, production}

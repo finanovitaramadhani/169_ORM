@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         deskripsi: {
             type: DataTypes.TEXT,
-            allowNull: fales
+            allowNull: false
         }
     }, {
         tableName: 'komik',
